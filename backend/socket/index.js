@@ -12,7 +12,7 @@ const app = express()
 const server = http.createServer(app)
 const io = new Server(server, {
     cors: {
-        origin: "https://mohmaya-chat.vercel.app/",
+        origin: "https://mohmaya-chat.vercel.app:10000",
         credentials: true
     }
 })
