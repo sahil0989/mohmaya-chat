@@ -13,7 +13,7 @@ function Home() {
         // console.log("Current User: ", currentUser);
         setFetchUser(true);
 
-        const socketConnection = io("http://localhost:5000", {
+        const socketConnection = io(`${process.env.REACT_APP_BACKEND_URL}`, {
             auth: {
                 userId: currentUser?._id
             }
